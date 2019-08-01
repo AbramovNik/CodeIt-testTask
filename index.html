@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./jquery-searcher-0.3.0/src/jquery.searcher.js"></script>
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header-wrapp">
+                    <div class="logo">
+                        <a href="#">
+                            <div class="logo-text">
+                                <strong class="main-text">Code<span>It</span></strong>
+                                <span class="add-text">Store</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navigation-wrapp">
+                        <nav class="navigation">
+                            <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">All Brands <i class="icon-down-arrow"></i></a>
+                                    <div class="dropdown">
+                                        <ul>
+                                            <li><a href="#">Apple</a></li>
+                                            <li><a href="#">Samsung</a></li>
+                                            <li><a href="#">Huawei</a></li>
+                                            <li><a href="#">Sony</a></li>
+                                            <li><a href="#">Xiaomi</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Latest</a></li>
+                                <li><a href="#">Featured</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li class="search"><i class="icon-search"></i></li>
+                            </ul>
+                        </nav>
+                        <div class="basket">
+                            <span class="icon"><i class="icon-shopping-bag"></i></span>
+                            <span class="price">$ 0</span>
+                            <div class="number-of-goods"></div>
+                        </div>
+                        <strong class="nav-btn">
+                            <span></span>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="wish-list">
+            <div class="container">
+                <div class="row ">
+                    <div class="col ">
+                        <h2>My wishlist</h2>
+                    </div>
+                    <div class="col pages">
+                        <span>Home</span>
+                        <i class="icon-right-arrow"></i>
+                        <span>My Wishlist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapp">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="button-hold">
+                            <input type="text" placeholder="Search" id="search-input"><button disabled="disabled"
+                                class="clear-list" type="button">Clear
+                                List</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="phones">
+            <div class="container">
+                <div class="slider-wrapp">
+                    <div class="slide">
+                        <div class="row">
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiMate.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Huawei Mate S</h4>
+                                        <h4 class="price">$280.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xperia.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">SONY XPERIA Z5</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xiaomi.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Xiaomi Mi 4i</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6sRose.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">iPhone Rose Gold</h4>
+                                        <h4 class="price">$280.00 <span class="prev-price">$649.00</span></h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/galaxyCore.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Galaxy Core Prime </h4>
+                                        <h4 class="price">$399.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6s.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Apple iPhone 6S</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6sRose.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">iPhone Rose Gold</h4>
+                                        <h4 class="price">$280.00 <span class="prev-price">$649.00</span></h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/galaxyCore.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Galaxy Core Prime </h4>
+                                        <h4 class="price">$399.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xperia.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">SONY XPERIA Z5</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xiaomi.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Xiaomi Mi 4i</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiMate.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Huawei Mate S</h4>
+                                        <h4 class="price">$280.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6s.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Apple iPhone 6S</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6sRose.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">iPhone Rose Gold</h4>
+                                        <h4 class="price">$280.00 <span class="prev-price">$649.00</span></h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xperia.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">SONY XPERIA Z5</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xiaomi.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Xiaomi Mi 4i</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiMate.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Huawei Mate S</h4>
+                                        <h4 class="price">$280.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6s.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Apple iPhone 6S</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/galaxyCore.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Galaxy Core Prime </h4>
+                                        <h4 class="price">$399.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="row">
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiMate.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Huawei Mate S</h4>
+                                        <h4 class="price">$280.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xiaomi.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Xiaomi Mi 4i</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6sRose.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">iPhone Rose Gold</h4>
+                                        <h4 class="price">$280.00 <span class="prev-price">$649.00</span></h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/iphone6s.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Apple iPhone 6S</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/huaweiG8.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">HUAWEI G8 4G</h4>
+                                        <h4 class="price">$350.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/galaxyCore.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">Galaxy Core Prime </h4>
+                                        <h4 class="price">$399.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6">
+                                <div class="phone-hold">
+                                    <div class="img-hold">
+                                        <img src="./img/xperia.png" alt="phone">
+                                        <div class="hover-text">
+                                            <button class="remove">Remove from list</button>
+                                        </div>
+                                    </div>
+                                    <div class="phone-info">
+                                        <h4 class="phone-name">SONY XPERIA Z5</h4>
+                                        <h4 class="price">$550.00</h4>
+                                        <ul>
+                                            <li class="remove-phone"><i class="icon-trash"></i></li>
+                                            <li class="add-phone"><i class="icon-shopping-cart"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="store-features">
+            <div class="container">
+                <div class="features-wrapp autoplay">
+                    <div class="feature-hold ">
+                        <div class="icon-hold"><i class="icon-like"></i></div>
+                        <div class="text-hold">
+                            <strong>Full warrenty</strong>
+                            <span>Read About Our Warrenty</span>
+                        </div>
+                    </div>
+                    <div class="feature-hold ">
+                        <div class="icon-hold"><i class="icon-truck"></i></div>
+                        <div class="text-hold">
+                            <strong>express shipping</strong>
+                            <span>Local & International Shipping</span>
+                        </div>
+                    </div>
+                    <div class="feature-hold ">
+                        <div class="icon-hold"><i class="icon-comment"></i></div>
+                        <div class="text-hold">
+                            <strong>mobile blog</strong>
+                            <span>Discuss Your Favourite Phone</span>
+                        </div>
+                    </div>
+                    <div class="feature-hold ">
+                        <div class="icon-hold"><i class="icon-headphones"></i></div>
+                        <div class="text-hold">
+                            <strong>24/7 Support</strong>
+                            <span>Get Full Support via Chat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subs-wrapp">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="subs-info">
+                                <p>subscribe to latest smartphones</p>
+                                <p>news & great deals we offer</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sub-mail">
+                                <span class="input-wrapp"><input type="email"
+                                        placeholder="Enter Your Email Address ..."></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="social-media">
+                                <table>
+                                    <tr>
+                                        <th><a href="#"><i class="icon-twitter"></i></a></th>
+                                        <th><a href="#"><i class="icon-facebook"></i></a></th>
+                                        <th><a href="#"><i class="icon-linkedin"></i></a></th>
+                                        <th><a href="#"><i class="icon-google-plus"></i></a></th>
+                                        <th><a href="#"><i class="icon-pinterest"></i></a></th>
+                                        <th><a href="#"><i class="icon-youtube"></i></a></th>
+                                        <th><a href="#"><i class="icon-rss"></i></a></th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="copyright">
+                            <p>Copyright &copy 2015 <strong>codeitStore</strong> All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cards-wrapp">
+                            <img src="./img/visa-electron.png" alt="card">
+                            <img src="./img/paypal.png" alt="card">
+                            <img src="./img/visa.png" alt="card">
+                            <img src="./img/mastercard.png" alt="card">
+                            <img src="./img/maestro.png" alt="card">
+                            <img src="./img/discover.png" alt="card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
